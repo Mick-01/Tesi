@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Volumes/OpenFOAM_lib/src/OpenFOAM/lnInclude/**",
+                "/Volumes/OpenFOAM_lib/src/finiteVolume/lnInclude/**",
+                "/Volumes/OpenFOAM_lib/src/finiteVolume/lnInclude",
+                "/Volumes/OpenFOAM_lib/src/meshTools/lnInclude/**",
+                "/Volumes/OpenFOAM_lib/src/TurbulenceModels/turbulenceModels/lnInclude/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-x64"
+        }
+    ],
+    "version": 4
+}

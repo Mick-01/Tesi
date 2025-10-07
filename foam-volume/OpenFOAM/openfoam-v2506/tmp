@@ -1,0 +1,17 @@
+cd $WM_PROJECT_USER_DIR/src/TurbulenceModels
+sed -i s/"omega_"/"this->omega_"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"alphaOmega2_"/"this->alphaOmega2_"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"k_"/"this->k_"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"DomegaEff(F1)"/"this->DomegaEff(F1)"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"GbyNu(GbyNu0, F23(), S2())"/"this->GbyNu(GbyNu0, F23(), S2())"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"Qsas(S2(), gamma, beta)"/"this->Qsas(S2(), gamma, beta)"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"omegaSource()"/"this->omegaSource()"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"DkEff(F1)"/"this->DkEff(F1)"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"Pk(G)"/"this->Pk(G)"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"epsilonByk(F1, tgradU())"/"this->epsilonByk(F1, tgradU())"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"kSource()"/"this->kSource()"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"DomegaEff(F1), omega_)"/"this->DomegaEff(F1), omega_)"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"epsilonByk(F1, tgradU()), k_)"/"this->epsilonByk(F1, tgradU()), k_)"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"omegaInf_"/"this->omegaInf_"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"betaStar_"/"this->betaStar_"/g turbulenceModels/RAS/frozenSST/frozenSST.C
+sed -i s/"kInf_"/"this->kInf_"/g turbulenceModels/RAS/frozenSST/frozenSST.C

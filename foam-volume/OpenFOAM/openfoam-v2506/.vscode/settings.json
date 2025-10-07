@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "*.edp": "freefem",
+        "*Dict": "OpenFOAM",
+        "*Properties": "OpenFOAM",
+        "fvSchemes": "OpenFOAM",
+        "fvSolution": "OpenFOAM",
+        "**/constant/g": "OpenFOAM",
+        "**/0/*": "OpenFOAM",
+        "frozenRANS.C": "cpp",
+        "simpleFoam.C": "cpp",
+        "kOmegaSSTBase.C": "cpp",
+        "frozenkOmegaSST.C": "cpp",
+        "frozenSST.C": "cpp",
+        "TimeIO.C": "cpp",
+        "myTurbulentTransportModels.C": "cpp",
+        "kOmegaSSTF.C": "cpp",
+        "frozenFOAM.C": "cpp"
+    }
+}
