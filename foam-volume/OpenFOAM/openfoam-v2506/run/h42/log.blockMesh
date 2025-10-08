@@ -1,19 +1,19 @@
 /*---------------------------------------------------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  2006                                  |
+|  \\    /   O peration     | Version:  2506                                  |
 |   \\  /    A nd           | Website:  www.openfoam.com                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
-Build  : bed1305d-20201029 OPENFOAM=2006 patch=201012
+Build  : _615aae61-20250627 OPENFOAM=2506 version=2506
 Arch   : "LSB;label=32;scalar=64"
 Exec   : blockMesh
-Date   : Mar 08 2021
-Time   : 11:04:54
-Host   : 3970X
-PID    : 28028
+Date   : Oct 08 2025
+Time   : 14:01:33
+Host   : 69da72c700c0
+PID    : 481
 I/O    : uncollated
-Case   : /home/ryley/WDK/OpenFOAM/ryley-v2006/run/komegasst/bump/h42
+Case   : /home/openfoam/OpenFOAM/openfoam-v2506/run/h42
 nProcs : 1
 trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
@@ -26,7 +26,8 @@ Creating block mesh from "system/blockMeshDict"
 Creating block edges
 No non-planar block faces defined
 Creating topology blocks
-Creating topology patches
+
+Creating topology patches - from boundary section
 
 Creating block mesh topology
 
@@ -45,7 +46,7 @@ Creating merge list (topological search)...
 Creating polyMesh from blockMesh
 Creating patches
 Creating cells
-Creating points with scale 1
+Creating points with scale (1 1 1)
     Block 0 cell size :
         i : 0.00302101 .. 0.00211471
         j : 4.79926e-05 .. 0.00383941
@@ -71,8 +72,7 @@ Creating points with scale 1
         j : 4.79926e-05 .. 0.00383941
         k : 0.05 .. 0.05
 
-
-There are no merge patch pairs
+No patch pairs to merge
 
 Writing polyMesh with 0 cellZones
 ----------------

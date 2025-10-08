@@ -1,0 +1,12 @@
+#!/bin/sh
+cd h42
+./Runmesh
+./Runsim
+
+cd ../h42_frozen
+./Runmesh
+./Runsim
+
+cd ../h42_sparse
+./Runmesh
+./Runsim

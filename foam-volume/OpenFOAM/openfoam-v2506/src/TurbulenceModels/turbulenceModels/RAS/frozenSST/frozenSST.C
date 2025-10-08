@@ -193,18 +193,6 @@ void frozenSST<BasicTurbulenceModel>::correct()
         R.primitiveFieldRef() = kEqn().residual();
         fvOptions.correct(this->k_);
         bound(this->k_, this->kMin_);
-
-        /*R = fvc::ddt(alpha, rho, this->k_)
-        + fvc::div(alphaRhoPhi, this->k_)
-        - fvc::laplacian(alpha*rho*this->DkEff(F1), this->k_)
-        - (
-            alpha()*rho()*this->Pk(G)
-          - fvc::SuSp((2.0/3.0)*alpha()*rho()*divU, this->k_)
-          - fvc::Sp(alpha()*rho()*this->epsilonByk(F1, tgradU()), this->k_)
-          + alpha()*rho()*this->betaStar_*this->omegaInf_*this->kInf_
-          + this->kSource()
-          + fvOptions(alpha, rho, this->k_)
-        );*/
     }
 
     {

@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.edp": "freefem",
+        "*Dict": "OpenFOAM",
+        "*Properties": "OpenFOAM",
+        "fvSchemes": "OpenFOAM",
+        "fvSolution": "OpenFOAM",
+        "**/constant/g": "OpenFOAM",
+        "**/0/*": "OpenFOAM",
+        "frozenSST.C": "cpp"
+    }
+}
