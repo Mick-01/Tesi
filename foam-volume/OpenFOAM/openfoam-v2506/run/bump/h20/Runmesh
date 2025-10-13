@@ -1,0 +1,14 @@
+#!/bin/sh
+cd ${0%/*} || exit 1                        # Run from this directory
+. $WM_PROJECT_DIR/bin/tools/RunFunctions    # Tutorial run functions
+foamCleanTutorials
+touch case.foam
+mv system/blockMeshDict_h20 system/blockMeshDict
+blockMesh | tee log.blockMesh
+postProcess -func writeCellCentres
+mv 0/Cx constant/
+mv 0/Cy constant/
+rm 0/C*
+
+
+#------------------------------------------------------------------------------

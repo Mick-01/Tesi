@@ -1,0 +1,195 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2506                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _615aae61-20250627 OPENFOAM=2506 version=2506
+Arch   : "LSB;label=32;scalar=64"
+Exec   : decomposePar -force
+Date   : Oct 10 2025
+Time   : 15:09:11
+Host   : c716e7fc5efe
+PID    : 227
+I/O    : uncollated
+Case   : /home/openfoam/OpenFOAM/openfoam-v2506/run/bump/h20
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh
+
+Create mesh
+
+Calculating distribution of cells
+Decomposition method scotch [4] (region region0)
+
+Finished decomposition in 0.13 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 18025
+    Number of points = 36638
+    Number of faces shared with processor 1 = 197
+    Number of faces shared with processor 2 = 107
+    Number of faces shared with processor 3 = 85
+    Number of processor patches = 3
+    Number of processor faces = 389
+    Number of boundary faces = 36247
+
+Processor 1
+    Number of cells = 18115
+    Number of points = 36818
+    Number of faces shared with processor 0 = 197
+    Number of processor patches = 1
+    Number of processor faces = 197
+    Number of boundary faces = 36619
+
+Processor 2
+    Number of cells = 17945
+    Number of points = 36502
+    Number of faces shared with processor 0 = 107
+    Number of faces shared with processor 3 = 234
+    Number of processor patches = 2
+    Number of processor faces = 341
+    Number of boundary faces = 36159
+
+Processor 3
+    Number of cells = 18015
+    Number of points = 36670
+    Number of faces shared with processor 0 = 85
+    Number of faces shared with processor 2 = 234
+    Number of processor patches = 2
+    Number of processor faces = 319
+    Number of boundary faces = 36349
+
+Number of processor faces = 623
+Max number of cells = 18115 (0.499307% above average 18025)
+Max number of processor patches = 3 (50% above average 2)
+Max number of faces between processors = 389 (24.8796% above average 311.5)
+
+Time = 0
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2506                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _615aae61-20250627 OPENFOAM=2506 version=2506
+Arch   : "LSB;label=32;scalar=64"
+Exec   : frozenFoam -parallel
+Date   : Oct 10 2025
+Time   : 15:09:17
+Host   : c716e7fc5efe
+PID    : 263
+I/O    : uncollated
+Case   : /home/openfoam/OpenFOAM/openfoam-v2506/run/bump/h20
+nProcs : 4
+Hosts  :
+(
+    (c716e7fc5efe 4)
+)
+Pstream initialized with:
+    node communication : off [type=host] (4 ranks, 1 nodes)
+    topology controls  : none
+    consensus exchange : 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: no convergence criteria found. Calculations will run for 6000 steps.
+
+Reading field p
+
+Reading field U
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2506                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _615aae61-20250627 OPENFOAM=2506 version=2506
+Arch   : "LSB;label=32;scalar=64"
+Exec   : reconstructPar -latestTime
+Date   : Oct 10 2025
+Time   : 15:09:19
+Host   : c716e7fc5efe
+PID    : 275
+I/O    : uncollated
+Case   : /home/openfoam/OpenFOAM/openfoam-v2506/run/bump/h20
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From int main(int, char**)
+    in file reconstructPar.C at line 271
+    No times selected/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2506                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _615aae61-20250627 OPENFOAM=2506 version=2506
+Arch   : "LSB;label=32;scalar=64"
+Exec   : postProcess -func sample
+Date   : Oct 10 2025
+Time   : 15:09:20
+Host   : c716e7fc5efe
+PID    : 277
+I/O    : uncollated
+Case   : /home/openfoam/OpenFOAM/openfoam-v2506/run/bump/h20
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+--> FOAM Warning : 
+    From Foam::autoPtr<Foam::coordSet> Foam::coordSet::gatherSort(Foam::labelList&) const
+    in file coordSet/coordSet.C at line 223
+    Gathered empty coordSet: line1
+Sampled set:
+    line1 -> csv
+
+Time = 0
+
+Reading fields:
+    volScalarField: epsilon k

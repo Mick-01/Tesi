@@ -1,0 +1,11 @@
+#!/bin/sh
+cd ${0%/*} || exit 1                        # Run from this directory
+. $WM_PROJECT_DIR/bin/tools/RunFunctions    # Tutorial run functions
+
+
+decomposePar -force
+mpirun -n 4 frozenFoam -parallel | tee log.simpleFoam
+reconstructPar -latestTime
+rm -r processor*
+postProcess -func "grad(U)"
+#------------------------------------------------------------------------------

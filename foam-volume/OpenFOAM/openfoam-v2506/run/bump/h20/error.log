@@ -1,0 +1,113 @@
+
+
+--> FOAM FATAL IO ERROR: (openfoam-2506)
+compound has already been transferred from token
+    on line 18: moved compound of type List<scalar>
+
+file: 0/k/boundaryField/bottom/value at line 18.
+
+    From Foam::token::compound& Foam::token::transferCompoundToken(const Foam::Istream*)
+    in file lnInclude/token.C at line 175.
+
+FOAM aborting
+
+[stack trace]
+=============
+#1  Foam::error::simpleExit(int, bool) in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so
+#2  Foam::token::transferCompoundToken(Foam::Istream const*) in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so
+#3  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libgenericPatchFields.so
+#4  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libgenericPatchFields.so
+#5  Foam::fvPatchField<double>::adddictionaryConstructorToTable<Foam::genericFvPatchField<double> >::New(Foam::fvPatch const&, Foam::DimensionedField<double, Foam::volMesh> const&, Foam::dictionary const&) in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libgenericPatchFields.so
+#6  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libdecompose.so
+#7  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libdecompose.so
+#8  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libdecompose.so
+#9  Foam::fvFieldDecomposer::fieldsCache::readAllFields(Foam::fvMesh const&, Foam::IOobjectList const&) in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libdecompose.so
+#10  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/decomposePar
+#11  ? in /lib/x86_64-linux-gnu/libc.so.6
+#12  __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+#13  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/decomposePar
+=============
+Aborted
+[1] --------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+
+[1] 
+[1] --> FOAM FATAL ERROR: (openfoam-2506)
+[1] cannot find file "/home/openfoam/OpenFOAM/openfoam-v2506/run/bump/h20/processor1/0/U"
+[1] 
+[1]     From virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
+[1]     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 629.
+[1] 
+FOAM parallel run exiting
+[1] 
+[0] 
+[0] 
+[0] --> FOAM FATAL ERROR: (openfoam-2506)
+[0] cannot find file "/home/openfoam/OpenFOAM/openfoam-v2506/run/bump/h20/processor0/0/U"
+[0] 
+[0]     From virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
+[0]     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 629.
+[0] 
+FOAM parallel run exiting
+[0] 
+[2] 
+[2] 
+[2] --> FOAM FATAL ERROR: (openfoam-2506)
+[2] cannot find file "/home/openfoam/OpenFOAM/openfoam-v2506/run/bump/h20/processor2/0/U"
+[2] 
+[2]     From virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
+[2]     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 629.
+[2] 
+FOAM parallel run exiting
+[2] 
+[3] 
+[3] 
+[3] --> FOAM FATAL ERROR: (openfoam-2506)
+[3] cannot find file "/home/openfoam/OpenFOAM/openfoam-v2506/run/bump/h20/processor3/0/U"
+[3] 
+[3]     From virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
+[3]     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 629.
+[3] 
+FOAM parallel run exiting
+[3] 
+[c716e7fc5efe:00259] 3 more processes have sent help message help-mpi-api.txt / mpi-abort
+[c716e7fc5efe:00259] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+
+--> FOAM FATAL IO ERROR: (openfoam-2506)
+compound has already been transferred from token
+    on line 18: moved compound of type List<scalar>
+
+file: 0/k/boundaryField/bottom/value at line 18.
+
+    From Foam::token::compound& Foam::token::transferCompoundToken(const Foam::Istream*)
+    in file lnInclude/token.C at line 175.
+
+FOAM aborting
+
+[stack trace]
+=============
+#1  Foam::error::simpleExit(int, bool) in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so
+#2  Foam::token::transferCompoundToken(Foam::Istream const*) in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libOpenFOAM.so
+#3  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libturbulenceModels.so
+#4  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libturbulenceModels.so
+#5  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libturbulenceModels.so
+#6  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libturbulenceModels.so
+#7  Foam::kLowReWallFunctionFvPatchScalarField::kLowReWallFunctionFvPatchScalarField(Foam::fvPatch const&, Foam::DimensionedField<double, Foam::volMesh> const&, Foam::dictionary const&) in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libturbulenceModels.so
+#8  Foam::fvPatchField<double>::adddictionaryConstructorToTable<Foam::kLowReWallFunctionFvPatchScalarField>::New(Foam::fvPatch const&, Foam::DimensionedField<double, Foam::volMesh> const&, Foam::dictionary const&) in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/lib/libturbulenceModels.so
+#9  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/postProcess
+#10  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/postProcess
+#11  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/postProcess
+#12  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/postProcess
+#13  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/postProcess
+#14  ? in /lib/x86_64-linux-gnu/libc.so.6
+#15  __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+#16  ? in /usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/postProcess
+=============
+Aborted
